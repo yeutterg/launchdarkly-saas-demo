@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import { useFlags } from 'launchdarkly-react-client-sdk';
 import { Chatbot } from './Chatbot';
-import { useStore } from '../store/useStore';
 
 export function Layout() {
-  const chatbotEnabled = useStore((state) => state.chatbotEnabled);
-  const toggleChatbot = useStore((state) => state.toggleChatbot);
   const location = useLocation();
+  const { chatbotEnabled } = useFlags();
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -26,14 +25,6 @@ export function Layout() {
               <Link to="/calendar" className={`flex items-center ${location.pathname === '/calendar' ? 'font-bold text-gray-900 bg-gray-200 p-2 rounded' : 'text-gray-600 hover:text-gray-900'}`}>
                 Calendar
               </Link>
-            </div>
-            <div className="flex items-center">
-              <button
-                onClick={toggleChatbot}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-              >
-                {chatbotEnabled ? 'Disable Assistant' : 'Enable Assistant'}
-              </button>
             </div>
           </div>
         </div>

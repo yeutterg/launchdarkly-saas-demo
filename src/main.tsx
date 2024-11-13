@@ -5,6 +5,7 @@ import App from './App';
 import { asyncWithLDProvider } from 'launchdarkly-react-client-sdk';
 
 (async () => {
+  // Initialize the LaunchDarkly provider
   const LDProvider = await asyncWithLDProvider({
     clientSideID: import.meta.env.VITE_LD_CLIENT_ID || '', // Use the Vite environment variable
     context: {

@@ -2,6 +2,8 @@
 
 This is a simple React app that demonstrates how to use LaunchDarkly feature flags to toggle a feature on and off. The feature in this example is an AI chatbot, powered by OpenAI, that can answer questions about dentistry.
 
+This is just a demo app with only a frontend. If you deploy this app to production, you will leak your OpenAI API Key and LaunchDarkly Client-side ID to anyone with access to the app. So please only use this app for demo purposes in a local environment.
+
 ## Prerequisites
 
 - [Node.js and npm installed locally](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)

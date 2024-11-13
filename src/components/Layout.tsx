@@ -5,7 +5,7 @@ import { Chatbot } from './Chatbot';
 
 export function Layout() {
   const location = useLocation();
-  const { chatbotEnabled } = useFlags();
+  const { chatbotEnabled } = useFlags(); // LaunchDarkly feature flag
 
   return (
     <div className="min-h-screen bg-gray-100">

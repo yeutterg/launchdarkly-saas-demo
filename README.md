@@ -6,6 +6,8 @@ This is just a demo app with only a frontend. If you deploy this app to producti
 
 LaunchDarkly is initialized in `src/main.tsx`. The LaunchDarkly feature flag is implemented in `src/components/Layout.tsx`. The call to OpenAI is implemented in `src/components/Chatbot.tsx`.
 
+A demo video is available [here](https://www.youtube.com/watch?v=Eh1wAMaeYZY).
+
 ## Prerequisites
 
 - [Node.js and npm installed locally](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)

@@ -14,7 +14,7 @@ This is a simple React app that demonstrates how to use LaunchDarkly feature fla
 2. [Install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 3. In a terminal window, `cd` to the directory of the cloned repo, then run `npm install` to install the dependencies
 4. Duplicate `.env.sample` and rename it `.env.local`
-5. Within LaunchDarkly, create a new feature flag within your Test environment with the key `chatbotEnabled`, then add the Client-side ID to the `.env.local` file. The Client-side ID can be found in the LaunchDarkly dashboard > click ... next to Test > Client-side ID
+5. Within LaunchDarkly, create a new feature flag within your Test environment with the key `chatbotEnabled`, then add the Client-side ID to the `.env.local` file. The Client-side ID can be found in the LaunchDarkly dashboargit statusd > click ... next to Test > Client-side ID
 6. (Optional) Go to https://platform.openai.com/api-keys and create an API key. Add your OpenAI API key to the `.env.local` file. You will need to add some funds to your OpenAI account to use the API
 7. Run `npm run dev` to start the development server
 8. Open the app in your browser at the localhost URL provided in the terminal

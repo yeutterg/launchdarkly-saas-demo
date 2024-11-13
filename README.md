@@ -6,7 +6,7 @@ This is a simple React app that demonstrates how to use LaunchDarkly feature fla
 
 - [Node.js and npm installed locally](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - A [LaunchDarkly account](https://launchdarkly.com/)
-- An [OpenAI Platform account](https://platform.openai.com/api-keys)
+- (Optional)An [OpenAI Platform account](https://platform.openai.com/api-keys)
 
 ## Setup
 

@@ -29,6 +29,12 @@ A demo video is available [here](https://www.youtube.com/watch?v=Eh1wAMaeYZY).
 
 ## Triggering a feature flag update
 
-In addition to toggling the feature flag on and off in the LaunchDarkly dashboard, you can also trigger a feature flag update via a webhook if you are on the LaunchDarkly Enterprise plan.
+In addition to toggling the feature flag on and off in the LaunchDarkly dashboard, you can also trigger a feature flag update via a webhook, assuming you are on the LaunchDarkly Enterprise plan. This may be useful for auto-remediation: for example, you could trigger a flag update to disable the chatbot if errors are detected.
 
-Follow the steps in [this LaunchDarkly guide](https://docs.launchdarkly.com/home/releases/triggers-create) to set up a trigger webhook for your feature flag.
+Follow the steps in [this LaunchDarkly guide](https://docs.launchdarkly.com/home/releases/triggers-create) to set up a trigger webhook for your feature flag. Then, to test the trigger, create a POST request:
+
+```bash
+curl -X POST https://your_webhook_url
+```
+
+A video of how to remediate with triggers is available [here](https://youtu.be/oCCmRq20H3U).

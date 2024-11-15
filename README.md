@@ -20,11 +20,12 @@ A demo video is available [here](https://www.youtube.com/watch?v=Eh1wAMaeYZY).
 2. [Install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 3. In a terminal window, `cd` to the directory of the cloned repo, then run `npm install` to install the dependencies
 4. Duplicate `.env.sample` and rename it `.env.local`
-5. Within LaunchDarkly, create a new feature flag within your Test environment with the key `chatbotEnabled`, then add the Client-side ID to the `.env.local` file. The Client-side ID can be found in the LaunchDarkly dashboard under Flags > click ... next to the Test environment > Client-side ID
-6. (Optional) Go to https://platform.openai.com/api-keys and create an API key. Add your OpenAI API key to the `.env.local` file. You will need to add some funds to your OpenAI account to use the API
-7. Run `npm run dev` to start the development server
-8. Open the app in your browser at the localhost URL provided in the terminal
-9. Interact with the app and chatbot. Use the LaunchDarkly feature flag to instantly toggle the chatbot on and off
+5. Within LaunchDarkly, create a new feature flag within your Test environment with the key `chatbotEnabled`. Be sure to go to the Settings tab under Client-side SDK availability, and check the box next to SDKs using Client-side ID.
+6. hen add the Client-side ID to the `.env.local` file. The Client-side ID can be found in the LaunchDarkly dashboard under Flags > click ... next to the Test environment > Client-side ID
+7. (Optional) Go to https://platform.openai.com/api-keys and create an API key. Add your OpenAI API key to the `.env.local` file. You will need to add some funds to your OpenAI account to use the API
+8. Run `npm run dev` to start the development server
+9. Open the app in your browser at the localhost URL provided in the terminal
+10. Interact with the app and chatbot. Use the LaunchDarkly feature flag to instantly toggle the chatbot on and off
 
 ## Triggering a feature flag update
 
